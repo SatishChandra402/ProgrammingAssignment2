@@ -1,4 +1,6 @@
+## makeCacheMatrix creates a special matrix that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()){
+    
     inv <- NULL                                      ## initialize inv as NULL; will hold value of matrix inverse
     set <- function(y){                              ## define the set function to assign new 
          x <<- y                                     ## value of matrix in parent environment
